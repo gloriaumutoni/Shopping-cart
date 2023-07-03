@@ -42,15 +42,82 @@ cursor: pointer;
     border: 1px solid gray;
     margin: 10px;
 }
+.product:hover{
+    cursor: pointer;
+    transition: .3s;
+}
 .product h4{
 font-size: 14px;
+text-align: center;
 }
 .product .paragraph1{
     font-size: 12px;
     width: 90%;
     text-align: center;
 }
+.product .paragraph2{
+   padding: 10px;
+   font-weight: bold;
+}
 .product img{
     width: 40%;
+    height: 200px;
     margin-left: 23%;
+    object-fit: cover;
 }
+.cart_container h2{
+margin: 10px 40px;
+}
+.cart{
+display: flex;
+justify-content: center;
+
+}
+.cart_dsiplay{
+    display: flex;
+    /* width: 60%; */
+    gap: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+}
+.cart_dsiplay img{
+    width: 20%;
+    height: 160px;
+    object-fit: cover; 
+    margin: 20px;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.whole{
+   display: flex;
+   gap: 40px;
+}
+.buttons button{
+border: none;
+padding:  3px 10px;
+cursor: pointer;
+background-color: white;
+}
+.buttons{
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+
+
+
+ @media screen and (max-width:360px){
+ .container{
+        
+        grid-template-columns: repeat(2,.1fr);
+        /* box-sizing: border-box;   */
+ }  
+ }

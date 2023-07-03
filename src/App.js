@@ -1,10 +1,15 @@
 import './App.css';
-import ProductsPage from './pages/productspage'
+import {BrowserRouter as Router} from 'react-router-dom'
+import Routes from './pages/routes'
 
 function App() {
   return (
     <div className="App">
-      <ProductsPage/>
+       <Router>
+        <Routes>
+          
+        </Routes>
+       </Router>
       
     </div>
   );
